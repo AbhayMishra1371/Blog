@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 export const runtime = "nodejs";
 
-export async function GET() {
+export async function GET(lol) {
     try {
         const client = await clientPromise;
         const db = client.db("Studzee_Database");
